@@ -1,3 +1,5 @@
+![APP Screenshot](https://github.com/Manuele-T/Chatbot-recipes/blob/main/screenshots/Chatbot.jpg)
+
 # Cooking Chatbot
 
 ## Setup
