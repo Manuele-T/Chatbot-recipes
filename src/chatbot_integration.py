@@ -1,8 +1,13 @@
 import openai
+import os
 from chatbot import search_recipes
+from dotenv import load_dotenv
 
-# Set your OpenAI API key
-openai.api_key = "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"
+# Load environment variables from .env file
+load_dotenv()
+
+# Set your OpenAI API key from environment variable
+openai.api_key = os.getenv("OPENAI_API_KEY")
 
 # Function to handle user queries
 def ask_chatbot(prompt):
