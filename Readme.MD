@@ -2,33 +2,20 @@
 
 ![APP Screenshot](https://github.com/Manuele-T/Chatbot-recipes/blob/main/screenshots/Chatbot.jpg)
 
-## Setup
+This project is a cooking assistant chatbot that suggests recipes based on user-provided ingredients. It uses a language model to interpret free-text inputs and generate coherent, context-aware recipe suggestions. Users can list what they have in their kitchen and receive a step-by-step cooking idea in return.
 
-1. Clone the repository:
+The chatbot was built in Python and uses the OpenAI API for natural language processing. The goal was to create a lightweight prototype that turns basic input into useful cooking instructions.
 
-    ```sh
-    git clone https://github.com/yourusername/your-repo.git
-    cd your-repo
-    ```
+## Key Features
+- Accepts natural language ingredient input (e.g., *"I have eggs, spinach, and cheese"*)
+- Returns a complete recipe with instructions
+- Lightweight UI built for quick testing and usability
+- Modular codebase organized across `src/` and `notebooks/` for experimentation and development
 
-2. Install the required packages:
+## Development Notes
+- The model is stateless — it doesn’t remember past interactions.
+- A `.env` file with an OpenAI API key is required to run the application.
+- The interface is intentionally minimal, with screenshots available in the `screenshots/` folder.
 
-    ```sh
-    pip install -r requirements.txt
-    ```
-
-3. Create a `.env` file and add your OpenAI API key:
-
-    ```plaintext
-    OPENAI_API_KEY=your-openai-api-key
-    ```
-
-4. Run the application:
-
-    ```sh
-    python ui.py
-    ```
-
-## Usage
-
-Type a keyword or ask a recipe-related question in the provided textbox.
+> ⚠️ **Note**: Running the app requires both a valid OpenAI API key and a local dataset file, neither of which are included in this repository.  
+> If you’re interested in seeing the system in action, I’d be happy to demonstrate it via an online call.
